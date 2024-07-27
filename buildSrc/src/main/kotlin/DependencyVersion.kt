@@ -1,6 +1,5 @@
 object DependencyVersion {
     /** external */
-    const val ARROW_FX = "1.2.1"
     const val KOTLIN_LOGGING = "6.0.3"
 
     /** test */
