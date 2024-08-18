@@ -38,4 +38,5 @@ jobs:
         env:
           MAVEN_USERNAME: ${{ secrets.GOOFY_OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.GOOFY_OSSRH_TOKEN }}
+          GITHUB_ACTOR: ${{ secrets.GOOFY_GITHUB_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.GOOFY_GITHUB_TOKEN }}
