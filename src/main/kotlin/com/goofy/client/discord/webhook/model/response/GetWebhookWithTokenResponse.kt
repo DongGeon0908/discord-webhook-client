@@ -1,4 +1,4 @@
-package com.goofy.client.discord.webhook
+package com.goofy.client.discord.webhook.model.response
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies
 import com.fasterxml.jackson.databind.annotation.JsonNaming

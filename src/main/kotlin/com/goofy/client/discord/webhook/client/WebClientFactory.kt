@@ -1,4 +1,4 @@
-package com.goofy.client.discord.webhook
+package com.goofy.client.discord.webhook.client
 
 import io.netty.channel.ChannelOption
 import io.netty.handler.timeout.ReadTimeoutHandler

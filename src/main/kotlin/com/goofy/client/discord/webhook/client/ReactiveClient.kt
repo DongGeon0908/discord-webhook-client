@@ -1,4 +1,4 @@
-package com.goofy.client.discord.webhook
+package com.goofy.client.discord.webhook.client
 
 import org.springframework.web.reactive.function.client.WebClient
 import org.springframework.web.reactive.function.client.bodyToMono

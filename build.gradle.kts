@@ -36,20 +36,6 @@ dependencies {
 
     /** etc */
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-
-    /** test */
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:${DependencyVersion.P6SPY_LOG}")
-    testImplementation("ch.qos.logback:logback-classic:${DependencyVersion.LOGBACK_CLASSIC}")
-    testImplementation("io.mockk:mockk:${DependencyVersion.MOCKK}")
-
-    /** kotest */
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test")
-    testImplementation("io.kotest:kotest-runner-junit5:${DependencyVersion.KOTEST}")
-    testImplementation("io.kotest:kotest-assertions-core:${DependencyVersion.KOTEST}")
-    testImplementation("io.kotest:kotest-property:${DependencyVersion.KOTEST}")
-    testImplementation("io.kotest:kotest-framework-datatest-jvm:${DependencyVersion.KOTEST}")
-    testImplementation("io.kotest.extensions:kotest-extensions-spring:${DependencyVersion.KOTEST_EXTENSION}")
 }
 
 idea {

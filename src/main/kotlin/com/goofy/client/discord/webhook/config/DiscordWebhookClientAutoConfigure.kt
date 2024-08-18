@@ -1,5 +1,8 @@
-package com.goofy.client.discord.webhook
+package com.goofy.client.discord.webhook.config
 
+import com.goofy.client.discord.webhook.client.DiscordWebhookClient
+import com.goofy.client.discord.webhook.client.ReactiveDiscordWebhookClient
+import com.goofy.client.discord.webhook.client.WebClientFactory
 import io.github.oshai.kotlinlogging.KotlinLogging
 import jakarta.validation.Valid
 import jakarta.validation.constraints.NotBlank
