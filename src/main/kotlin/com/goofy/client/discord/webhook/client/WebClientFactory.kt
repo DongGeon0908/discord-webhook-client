@@ -1,4 +1,4 @@
-package com.goofy.client.discord
+package com.goofy.client.discord.webhook.client
 
 import io.netty.channel.ChannelOption
 import io.netty.handler.timeout.ReadTimeoutHandler
@@ -26,23 +26,6 @@ class WebClientFactory {
 
             return WebClient.builder()
                 .baseUrl(baseUrl)
-                .codecs { it.defaultCodecs().enableLoggingRequestDetails(true) }
-                .clientConnector(clientHttpConnector)
-                .build()
-        }
-
-        fun generateWithoutBaseUrl(
-            connectionTimeoutMillis: Int = 1000,
-            readTimeoutMillis: Long = 1000,
-            writeTimeoutMillis: Long = 1000,
-        ): WebClient {
-            val clientHttpConnector = createFactory(
-                connectionTimeoutMillis = connectionTimeoutMillis,
-                readTimeoutMillis = readTimeoutMillis,
-                writeTimeoutMillis = writeTimeoutMillis
-            )
-
-            return WebClient.builder()
                 .codecs { it.defaultCodecs().enableLoggingRequestDetails(true) }
                 .clientConnector(clientHttpConnector)
                 .build()
